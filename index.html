@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World with Dialogflow</title>
-
     <!-- Dialogflow Messenger Stylesheet -->
     <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-
-    <!-- Dialogflow Messenger Script -->
-    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-
     <!-- Custom styles for the Dialogflow Messenger -->
     <style>
       body {
@@ -46,22 +41,25 @@
     </style>
 </head>
 <body>
-
     <div class="container">
       <h1>Hello, World!</h1>
       <p>This page includes the Dialogflow chat widget.</p>
     </div>
 
+    <!-- Dialogflow Messenger Script -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     <!-- Dialogflow Messenger Component -->
     <df-messenger
+      oauth-client-id="595593045889-cjl4ibcoau0iioq3987j6tpmeoiaaq0q.apps.googleusercontent.com"
+      access-token-name="spominko-zeton"
       project-id="helical-clock-462313-c2"
       agent-id="012995c2-68e8-4777-a773-35324cfe493c"
       language-code="sl"
       max-query-length="-1">
       <df-messenger-chat-bubble
-        chat-title="Spominko_SI">
+        chat-title="Spominko_SI"
+        chat-width="900">
       </df-messenger-chat-bubble>
     </df-messenger>
-
 </body>
 </html>
